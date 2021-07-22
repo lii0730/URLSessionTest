@@ -12,6 +12,7 @@ struct URLSessionTestApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(ModelData())
         }
     }
 }

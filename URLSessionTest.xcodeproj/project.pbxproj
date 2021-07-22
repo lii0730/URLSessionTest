@@ -15,6 +15,8 @@
 		9922517026A8485E002AE913 /* AlamofireTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9922516F26A8485E002AE913 /* AlamofireTest.swift */; };
 		9922517326A84A41002AE913 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9922517226A84A41002AE913 /* Product.swift */; };
 		9922517526A84B0C002AE913 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9922517426A84B0C002AE913 /* Products.swift */; };
+		9949283A26A9986500A2BE5A /* ProfileModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949283926A9986500A2BE5A /* ProfileModelView.swift */; };
+		9949283C26A9A2AC00A2BE5A /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9949283B26A9A2AC00A2BE5A /* ModelData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		9922516F26A8485E002AE913 /* AlamofireTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireTest.swift; sourceTree = "<group>"; };
 		9922517226A84A41002AE913 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		9922517426A84B0C002AE913 /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
+		9949283926A9986500A2BE5A /* ProfileModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModelView.swift; sourceTree = "<group>"; };
+		9949283B26A9A2AC00A2BE5A /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,8 @@
 			children = (
 				9922517226A84A41002AE913 /* Product.swift */,
 				9922517426A84B0C002AE913 /* Products.swift */,
+				9949283926A9986500A2BE5A /* ProfileModelView.swift */,
+				9949283B26A9A2AC00A2BE5A /* ModelData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -165,9 +171,11 @@
 			files = (
 				9922516026A8421D002AE913 /* ContentView.swift in Sources */,
 				9922517326A84A41002AE913 /* Product.swift in Sources */,
+				9949283A26A9986500A2BE5A /* ProfileModelView.swift in Sources */,
 				9922517526A84B0C002AE913 /* Products.swift in Sources */,
 				9922517026A8485E002AE913 /* AlamofireTest.swift in Sources */,
 				9922515E26A8421D002AE913 /* URLSessionTestApp.swift in Sources */,
+				9949283C26A9A2AC00A2BE5A /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

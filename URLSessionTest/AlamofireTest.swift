@@ -10,15 +10,25 @@ import Alamofire
 
 class Alamofire {
     
-    class func fetchData(completion: @escaping ((Int) -> Void)) {
+    class func fetchData(completion: @escaping (Result<Products, Error>) -> Void) {
         let request = AF.request("https://6083a15d5dbd2c001757b94a.mockapi.io/part5/chapter02/products")
-        request.responseDecodable(of: Products.self) { (products) in
-            guard let productList = products.value else {
-                return
+        let decoder = JSONDecoder()
+        request.responseDecodable(of: Products.self, decoder: decoder) { (response: AFDataResponse<Products>) in
+            switch response.result {
+            case .success(let products):
+                completion(.success(products))
+            case .failure(let error):
+                completion(.failure(error))
             }
-            completion(productList.count)
-    
         }
     }
     
+//    class func fetchData() {
+//        let request = AF.request("https://6083a15d5dbd2c001757b94a.mockapi.io/part5/chapter02/products")
+//        request.responseJSON { response in
+//
+//            print(response)
+//
+//        }
+//    }
 }

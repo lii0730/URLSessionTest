@@ -7,12 +7,16 @@
 
 import Foundation
 
-struct Product: Decodable, Identifiable {
-    let createdAt: Double
-    let id: Double
-    let product_image: String
-    let product_introduction_image: String
-    let product_name: String
-    let product_price: Int
-    let product_type: String
+struct Product: Codable, Identifiable {
+    var createdAt: Int
+    var id: String
+    var product_image: String
+    var product_introduction_image: String
+    var product_name: String
+    var product_price: String
+    var product_type: String
+    
+    init {
+        
+    }
 }
